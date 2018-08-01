@@ -97,7 +97,7 @@ public class TestDevBy {
         System.out.println("Жмем регистрация");
         element5.click();
         Assert.assertTrue(webDriver.findElement(By.xpath("//*[@id=\"new_user\"]/div[2]/div/div/div/ul/li")).isDisplayed());
-        String test = "hjddfgjh";
+        String test = "hjddfwfgfgffdfgjghjghgfgfgjh";
     }
     @Test
     public void proverkaVvodaImeiuni() {
