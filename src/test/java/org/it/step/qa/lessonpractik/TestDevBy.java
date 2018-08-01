@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -98,6 +97,7 @@ public class TestDevBy {
         System.out.println("Жмем регистрация");
         element5.click();
         Assert.assertTrue(webDriver.findElement(By.xpath("//*[@id=\"new_user\"]/div[2]/div/div/div/ul/li")).isDisplayed());
+        String test = "hjddfgjh";
     }
     @Test
     public void proverkaVvodaImeiuni() {
@@ -112,6 +112,7 @@ public class TestDevBy {
 */
         List<WebElement> elements = webDriver.findElements(By.cssSelector(".formErrorContent"));   //'ЭТО ВАРИАНТ ПРЕПОДАВАТЕЛЯ , БОЛЕЕ КОРОТКИЙ И ИЗЯЩНИЙ И ЕМКОЙ ПО КОДУ
         Assert.assertEquals(elements.size(),5,"Ожидаемое количество");
+        System.out.println("Github");
     }
     /*@AfterClass
     public void clouseDriver() {
